@@ -1,0 +1,76 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Finding some cheese",
+        "description": "",
+        "id": "search-on-google;finding-some-cheese",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8286982364,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the \"http://google.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://google.com/",
+                  "offset": 13
+                }
+              ],
+              "location": "GoogleSearchTestSteps.thePageIsOpen(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 184956932,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search for \"egartech\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "egartech",
+                  "offset": 14
+                }
+              ],
+              "location": "GoogleSearchTestSteps.iSearchFor(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5087324497,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the first link should be \"www.egartech.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "www.egartech.com/",
+                  "offset": 26
+                }
+              ],
+              "location": "GoogleSearchTestSteps.firstLinkShouldBe(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search on Google",
+    "description": "As an user\nI want to search on Google\nSo that I can see results",
+    "id": "search-on-google",
+    "keyword": "Feature",
+    "uri": "googleSearchTest/googleSearchTest.feature"
+  }
+]
